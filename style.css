@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a, button{
+    text-decoration: none;
+    color: aliceblue;
+}
+.header{
+    background-color: transparent;
+    color:#FFF; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 5px;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;   
+    padding: 0px 50px;
+    background-color: rgb(40, 42, 39);
+    font-family: "Roboto Slab", Helvetica, sans-serif;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    list-style: none;
+    margin-top: 20px;
+
+    
+    
+}
+
+
