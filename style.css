@@ -1,64 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    scroll-behavior: smooth;
 }
-a, button{
-    text-decoration: none;
-    color: aliceblue;
+:root{
+     --color-primario:#eaeff3;
+     --color-secundario:#a20515;
+     --color-terciario:#0c0b0a;
+}
+/* Animacion */
+@keyframes aparicion{
+    0%{opacity: 0;filter: grayscale(100%);}
+    50%{opacity: 1;}
+    100%{filter: grayscale(0%);}
+
+}
+/* Contenedor */
+.container{
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px 0;
+}
+/* Colores */
+.red{
+    color:var(--color-primario);
+    background-color: var(--color-secundario);
+}
+.white{
+    color:var(--color-secundario);
+    background-color: var(--color-primario);
+
+}
+body{
+    animation:aparicion 4s;
+}
+
+/* Fondos de página */
+#inicio{
+    background-image:url(./img/peludo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#baños{
+    background-image:url(./img/peludo02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position: left 40%;
+
+}
+.nav-container{
+    width: 70%;
+    min-height: 260px;
+    height: 50vh;
+    margin: 30px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+/* Navegacion */
+nav.menu{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;/*para que no se salga de linea*/
+}
+nav ul li{
+    list-style-type: none;
+    padding: 15px;
+}
+nav ul li a{
+  color: var(--color-primario);
+  text-decoration: none;
+  transition: 1s;
+}
+nav ul li a:hover{
+  color: var(--color-terciario);
+  transition: 0.5s;
+  
+}
+nav.menu h3{
+    margin-left: 15px;
+}
+.destacado{
+    color: var(--color-terciario);
+    
 }
 .fa-solid{
-    margin: 0;
-    height: 60px;
+    padding-left: 15px;
+}
+.titulos{
     display: flex;
-    align-items: center;
-    color: #e65c4f;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-.text-logo{
-    padding-left: 3px;
-    font-family: cursive;
-    color:#eaeff3;
-}
-.header{
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    padding: 5px;
-}
-nav{
+.titulo-principal{
     display: flex;
-    justify-content:space-around;
+    flex-direction: row;
     align-items: center;
-    height: 60px;   
-    padding: 0px 50px;
-    background-color: rgb(14, 67, 98);
-    font-family: "Roboto Slab", Helvetica, sans-serif;
+    justify-content: center;
+ 
+    width: 500px;
+}
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 500px;
   
-}
-.nav-links{
-    margin: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap:30px;
-    list-style: none;   
-}
-.hero{
 
-    background-image: url(img/tresPerritos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height:100%; 
 }
-.carousel slide{
-  
-    margin-top: 1500px;
+.registro{
+    color: var(--color-primario);
+    text-decoration: none;
+    margin-top: 20px;
+    border: 1px solid var(--color-primario);
+    border-radius: 10px;
+    padding: 5px;
+    width: auto;
+    transition: 2s;
 }
+.registro:hover{
+    color: var(--color-terciario);
+    border: 1px solid var(--color-terciario);
+    transition: 0.5s;
+}
+.fa-2xl{
+    padding-right: 15px;
+}
+h1{
+    color: var(--color-terciario);
+}
+.info-baños{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+    
+}
+
+.info-baños p{
+    margin-top: 20px;
+   font-weight: 300;
+ }
+.info-baños p :first-of-type{
+   margin-top: 20px;
+  }
+.info-baños p :first-of-type{
+   margin-bottom: 10px;
+  }
+  .text-pad p{
+    padding-bottom: 50px;
+  }
+
 
