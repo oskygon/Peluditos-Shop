@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/435941fa36.js" crossorigin="anonymous"></script>
     
+    
 </head>
 <body>
     
-  <div class="container red" id="inicio">
-    <div class="nav-container">
+  <div class="contenedor red" id="inicio">
+    <div class="nav-contenedor">
         <nav class="menu">
             <ul>
                 <li><a href="#inicio">Home</a></li>
@@ -19,14 +20,29 @@
                 <li><a href="#baños">Baños</a></li>
                 <li><a href="#paseos">Paseos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <!-- <li><a href="#buscar">Buscar</a><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                
             </ul>
-            <i class="fa-solid fa-paw fa-lg" style="color: #0f0f0f;"></i>
-            <h3><span class="destacado">Peluditos Shop</span></h3>
+            <div class="search-container">
+                <form action="">
+                    <input class="input-navbar" type="text" placeholder="Buscar productos" name="search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" title="Twiter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" title="Mi cuenta"><i class="fa fa-fw fa-user login"></i><Login</span></a>
+                </form>
+              </div>
+            <!-- <i class="fa-solid fa-paw fa-lg" style="color: #0f0f0f;"></i>
+            <h3><span class="destacado">Peluditos Shop</span></h3> -->
+            
+            
         </nav>
    
         <div class="titulos">
             <div class="titulo-principal">
-            <i class="fa-solid fa-paw fa-2xl" style="color: #0f0f0f;"></i>
+            <i class="fa-solid fa-paw fa-2xl patita" style="color: #0f0f0f;"></i>
             <h1>Peluditos Shop</h1>
         </div>
         <div class="subtitulo">
@@ -38,7 +54,8 @@
     </div>
   </div>
   <main>
-    <section class="container red info-baños" id="baños" >
+    <section class="contenedor white info-b" id="alimentos" >Aqui carrousel con ofertas de alimentos</section>
+    <section class="contenedor red info-b" id="baños" >
         <div class="text-pad">
             <h2>Baños</h2>
             <p>Nada es tan placentero como un baño <br> 
