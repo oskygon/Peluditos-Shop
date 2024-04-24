@@ -9,18 +9,26 @@
 </head>
 <body>
     <nav class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="alimento.html">Alimentos</a></li>
-            <li><a href="banos.html">Baños</a></li>
-            <li><a href="paseos.html">Paseos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div>
-            <input type="text" placeholder="Buscar productos">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <a href="#"><i class="fa fa-fw fa-user login"></i></a>
+        <button class="toggle" id="boton">
+            <span class="barrita"></span>
+            <span class="barrita"></span>
+            <span class="barrita"></span>
+        </button>
+        <div class="nav-contenedor quit" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="alimento.html">Alimentos</a></li>
+                <li><a href="banos.html">Baños</a></li>
+                <li><a href="paseos.html">Paseos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div>
+                <input type="text" placeholder="Buscar productos">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="#"><i class="fa fa-fw fa-user login"></i></a>
+            </div>
         </div>
+        <span class="fondo-oscuro" id="escape"></span>
     </nav>
     <main>
         <section class="contenedor red info-b" id="baños" >
